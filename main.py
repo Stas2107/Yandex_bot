@@ -73,7 +73,7 @@ async def get_gpt_response(user_message: str):
     # Обработчик команды /start
 @router.message(Command(commands=['start', 'help']))
 async def send_welcome(message: Message):
-    await message.answer("Привет! Я ассистент дроид. Задайте мне любой вопрос о галактике.")
+    await message.answer("Привет! Я ассистент дроид.")
 
     # Обработчик обычных сообщений
 @router.message()
